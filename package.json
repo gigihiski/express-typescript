@@ -4,7 +4,8 @@
   "description": "Portofolio API using Node EXpress Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand --verbose"
+    "test": "jest --runInBand --verbose",
+    "tsc": "tsc"
   },
   "keywords": [],
   "author": "",
