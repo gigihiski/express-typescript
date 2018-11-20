@@ -1,7 +1,7 @@
 {
-  "name": "portofolio-api-next",
+  "name": "express-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "Portofolio API using Node EXpress Typescript",
+  "description": "Node EXpress Typescript Boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "node dist/app.js",
