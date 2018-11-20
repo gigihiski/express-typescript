@@ -1,7 +1,7 @@
 {
-  "name": "portofolio-api-next",
+  "name": "express-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "Portofolio API using Node EXpress Typescript",
+  "description": "Node EXpress Typescript Boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "node dist/app.js",
@@ -21,6 +21,7 @@
     "typescript": "^3.1.6"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.9",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.4",
     "tslint": "^5.11.0"
