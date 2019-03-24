@@ -20,7 +20,8 @@
     "es6-shim": "^0.35.5",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
-    "protobufjs": "^6.8.8"
+    "protobufjs": "^6.8.8",
+    "sequelize": "^5.1.1"
   },
   "devDependencies": {
     "@types/async": "^2.4.1",
@@ -30,6 +31,7 @@
     "@types/nock": "^9.3.1",
     "jest": "^23.6.0",
     "nock": "^10.0.6",
+    "sequelize-typescript": "^0.6.8",
     "ts-jest": "^23.10.5",
     "tslint": "^5.14.0",
     "typescript": "^3.3.4000"
