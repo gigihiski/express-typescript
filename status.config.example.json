@@ -1,0 +1,28 @@
+{
+  "error": [{
+    "statusCode": "<ERROR_STATUS_CODE>",
+    "code": "<ERROR_CODE>",
+    "name": "<ERROR_NAME>",
+    "message": "<ERROR_MESSGE>",
+    "link": "<ERROR_LINK>"
+  },{
+    "statusCode": "<ERROR_STATUS_CODE>",
+    "code": "<ERROR_CODE>",
+    "name": "<ERROR_NAME>",
+    "message": "<ERROR_MESSGE>",
+    "link": "<ERROR_LINK>"
+  }],
+  "success": [{
+    "statusCode": "<SUCCESS_STATUS_CODE>",
+    "code": "<SUCCESS_CODE>",
+    "name": "<SUCCESS_NAME>",
+    "message": "<SUCCESS_MESSGE>",
+    "link": "<SUCCESS_LINK>"
+  },{
+    "statusCode": "<SUCCESS_STATUS_CODE>",
+    "code": "<SUCCESS_CODE>",
+    "name": "<SUCCESS_NAME>",
+    "message": "<SUCCESS_MESSGE>",
+    "link": "<SUCCESS_LINK>"
+  }]
+}
