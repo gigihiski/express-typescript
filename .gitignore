@@ -1,0 +1,11 @@
+# Node Modules
+node_modules/
+
+# Transpiled Folder
+dist/
+
+# PEM File
+*.pem
+
+# Configuration JSON File
+*.config.json

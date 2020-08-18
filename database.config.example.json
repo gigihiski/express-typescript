@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "<USERNAME_DEVELOPMENT>",
+    "password": "<PASSWORD_DEVELOPMENT>",
+    "database": "<DATABASE_DEVELOPMENT>",
+    "host": "<HOST_DEVELOPMENT>",
+    "dialect": "[mysql|postgres]"
+  },
+  "test": {
+    "username": "<USERNAME_TEST>",
+    "password": "<PASSWORD_TEST>",
+    "database": "<DATABASE_TEST>",
+    "host": "<HOST_TEST>",
+    "dialect": "[mysql|postgres]"
+  },
+  "production": {
+    "username": "<USERNAME_PRODUCTION>",
+    "password": "<PASSWORD_PRODUCTION>",
+    "database": "<DATABASE_PRODUCTION>",
+    "host": "<HOST_PRODUCTION>",
+    "dialect": "[mysql|postgres]"
+  }
+}
