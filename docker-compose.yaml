@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+    container_name: ${APP_NAME:-service-name}
+    env_file: '.env'
+    ports:
+      - "${APP_EXPOSED_PORT:-9000}:${APP_PORT:-9000}"
+    volumes:
+      - ./:/app
+    networks: 
+      - fullstack
+    restart: always
+
+networks:
+  fullstack:
+    driver: bridge
