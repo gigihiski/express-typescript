@@ -17,3 +17,7 @@ dist/
 
 # .key File
 *.key
+
+# Ignored Modules
+# Ignore the unrequired modules
+src/services/service_b
