@@ -1,8 +1,7 @@
 import { injectable } from "inversify";
 import { SecretManagerRepository } from "./secret_manager_repository.interface";
-import { AlfredError } from "../../../utils/errors/alfred.error";
-import Vault from "node-vault";
 import { SecretManagerConfiguration } from "../models/secret_manager_configuration.class";
+import Vault from "node-vault";
 
 @injectable()
 export class VaultRepository implements SecretManagerRepository {
