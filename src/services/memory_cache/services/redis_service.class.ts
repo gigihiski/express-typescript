@@ -1,7 +1,4 @@
-/** storage.js **/
-
 import { MemoryCacheService } from "./memory_cache_service.interface";
-
 import Redis from "redis";
 
 export class RedisService implements MemoryCacheService {
