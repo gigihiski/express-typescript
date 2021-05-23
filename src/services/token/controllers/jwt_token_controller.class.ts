@@ -1,7 +1,7 @@
 import { Request } from "express";
 import { inject, injectable } from "inversify";
 import { AlfredError } from "../../../utils/errors/alfred.error";
-import TYPES from "../../../utils/types";
+import TOKEN from "../containers/types";
 import { TokenService } from "../services/token_service.interface";
 import { TokenController } from "./token_controller.interface";
 
@@ -9,7 +9,7 @@ import { TokenController } from "./token_controller.interface";
 export class JWTTokenController implements TokenController {
   private _tokenService: TokenService;
 
-  constructor(@inject(TYPES.TokenService) tokenService: TokenService) {
+  constructor(@inject(TOKEN.JWTTokenService) tokenService: TokenService) {
     this._tokenService = tokenService;
   }
 

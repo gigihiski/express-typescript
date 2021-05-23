@@ -1,18 +1,20 @@
 import "reflect-metadata";
 import { Container } from "inversify";
-import TYPES from "./types";
-
-import { DatabaseConfiguration } from "../databases/database_configuration.interface";
-import { MongoDBConfiguration } from "../databases/mongodb.configuration";
-import { DatabaseClient } from "../databases/database_client.interface";
-import { MongoDBClient } from "../databases/mongodb.client";
+import DatabaseContainer from "../services/database/containers/inversify.config";
+import HTTPClientContainer from "../services/http_client/containers/inversify.config";
+import MemoryCacheContainer from "../services/memory_cache/containers/inversify.config";
+import MessageBrokerContainer from "../services/message_broker/containers/inversify.config";
+import SecretManagerContainer from "../services/secret_manager/containers/inversify.config";
+import TokenContainer from "../services/token/containers/inversify.config";
 
 const container = new Container();
-
-// Database
-container
-  .bind<DatabaseConfiguration>(TYPES.DatabaseConfiguration)
-  .to(MongoDBConfiguration);
-container.bind<DatabaseClient>(TYPES.DatabaseClient).to(MongoDBClient);
+container.load(
+  DatabaseContainer,
+  HTTPClientContainer,
+  MemoryCacheContainer,
+  MessageBrokerContainer,
+  SecretManagerContainer,
+  TokenContainer
+);
 
 export default container;
