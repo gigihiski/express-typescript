@@ -1,6 +1,8 @@
 import { MemoryCacheService } from "./memory_cache_service.interface";
 import Redis from "redis";
+import { injectable } from "inversify";
 
+@injectable()
 export class RedisService implements MemoryCacheService {
   private _client: any;
 

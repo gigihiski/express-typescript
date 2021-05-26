@@ -1,7 +1,9 @@
 import { Kafka, Consumer, Producer } from "kafkajs";
 import { MessageBrokerService } from "./message_broker_service.interface";
 import { MessageResponse } from "../models/message_response.interface";
+import { injectable } from "inversify";
 
+@injectable()
 export class KafkaService implements MessageBrokerService {
   private _producer: Producer;
   private _consumer: Consumer;
