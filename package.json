@@ -24,7 +24,7 @@
     "es6-shim": "^0.35.5",
     "express": "^4.17.1",
     "inversify": "^5.1.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "kafkajs": "^1.15.0",
     "mongodb": "^3.6.8",
     "node-vault": "^0.9.21",
